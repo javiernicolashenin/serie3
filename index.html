@@ -1,3 +1,25 @@
+<!DOCTYPE html>
 <html>
-HELLO
+<head>
+<title>Ejemplo HTML con JavaScript</title>
+</head>
+<body>
+
+  <h1>Ejemplo de HTML y JavaScript</h1>
+  <p id="parrafo">Este es un párrafo.</p>
+  <button onclick="cambiarTexto()">Haz clic aquí</button>
+
+  <script>
+    // Este código se ejecuta al cargar la página
+    alert("¡Hola desde JavaScript!");
+
+    function cambiarTexto() {
+      // Accede al elemento con id "parrafo"
+      var elemento = document.getElementById("parrafo");
+      // Cambia el texto del párrafo
+      elemento.innerHTML = "¡El texto ha cambiado!";
+    }
+  </script>
+
+</body>
 </html>
